@@ -1,0 +1,69 @@
+.asics {
+    margin: 100px 0;
+    &__main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        @media (max-width:992px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__wrapper {}
+
+
+    &__left {}
+
+    &__bgi {
+        background-image: url(./../../assets//img/asics-main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        max-width: 790px;
+        height: 760px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: end;
+        position: relative;
+        @media (max-width:992px){
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        color: white;
+        font-weight: 900;
+        bottom: 70px;
+        left: 15px;
+        position: absolute;
+    }
+
+    &__btn {
+        width: max-content;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 15px 25px;
+        background-color: white;
+        border: 1px solid black;
+        transition: all .3s;
+        box-shadow: 5px 5px 0px -2px rgba(0, 0, 0, 1);
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+
+        &.click{
+            padding: 10px;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            box-shadow: none;
+            transform: translateY(2px) translateX(2px);
+        }
+    }
+
+
+}

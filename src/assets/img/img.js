@@ -1,0 +1,7 @@
+export {  default as adidas } from './adidas.webp'
+export {  default as asics } from './asics.webp'
+export {  default as karhu } from './karhu.webp'
+export {  default as rebook } from './rebook.webp'
+export {  default as puma } from './puma.webp'
+export {  default as newBalance } from './newBalance.webp'
+export { default as asicsMain} from './asics-main.jpg'
