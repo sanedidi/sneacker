@@ -1,3 +1,4 @@
+
 .header {
     position: sticky;
     top: 0;
@@ -17,7 +18,38 @@
 
     &__top {
         display: flex;
+        align-items: center;
+        gap: 20px;
         justify-content: space-between;
+
+        @media (max-width:992px) {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            grid-template-columns: .2fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "header__burger header__logo header__btn"
+                "header__tools header__tools header__tools";
+        }
+
+        .header__burger {
+            grid-area: header__burger;
+        }
+
+        .header__logo {
+            grid-area: header__logo;
+        }
+
+        .header__btn {
+            grid-area: header__btn;
+        }
+
+        .header__tools {
+            grid-area: header__tools;
+
+        }
     }
 
     &__wrapper {
@@ -32,12 +64,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 200px;
+        gap: clamp(6.25rem, 3.977rem + 11.36vw, 12.5rem);
         background-color: #f4f4f4;
         font-family: sans-serif;
         color: black;
         position: relative;
-
         @media (max-width:992px) {
             display: none;
         }
@@ -45,11 +76,9 @@
 
     &__logo {
         width: 100%;
-        max-width: 280px;
+        max-width: 300px;
 
-        @media (max-width:992px) {
-            display: none;
-        }
+
     }
 
     &__mini-logo {
@@ -143,6 +172,10 @@
         color: black;
         font-size: 15px;
         line-height: 40px;
+        a{
+            color: black;
+            font-family: sans-serif;
+        }
     }
 
     &__tools {
@@ -150,11 +183,34 @@
         align-items: center;
         justify-content: space-between;
         gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+
+        &::after {
+            content: '';
+            background-image: url(https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 9px;
+            right: 13px;
+        }
+
+        @media (max-width: 992px) {
+            order: 1;
+
+        }
+
     }
 
     &__btn {
         display: flex;
         gap: 20px;
+        margin-left: auto;
     }
 
     &__search {
@@ -163,9 +219,9 @@
         gap: 5px;
         border: 1px solid black;
         padding: 10px;
-        width: 500px;
+        width: 100%;
         border-radius: 5px;
-
+       
 
         @media (max-width:992px) {
             span {
@@ -206,7 +262,7 @@
 
     &__categories-latest {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         margin: 20px 0;
         max-width: 600px;
         width: 100%;
@@ -224,11 +280,15 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+
         a {
             color: black;
             font-size: 12px;
             font-family: sans-serif;
             width: max-content;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -238,6 +298,7 @@
     display: none;
 
 }
+
 .active {
     display: block;
     position: absolute;
@@ -245,5 +306,5 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    padding:10px 100px;
+    padding: 0 100px;
 }
