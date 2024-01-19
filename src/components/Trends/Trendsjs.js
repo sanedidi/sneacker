@@ -26,12 +26,5 @@ export const trendsMap = [
         desc: 'Saucony Shadow 6000 Grey',
         price: 145.00 ,
         btn: 'View Product'
-    },
-    {
-        img: 'https://cdn.etrias.nl/media/cache/product_thumb_xs/s/h/shadow-6000-beige-greyphpylgipe.png',
-        title: 'Saucony',
-        desc: 'Saucony Shadow 6000 Pink / Purple',
-        price: 145.00 ,
-        btn: 'View Product'
     }
 ]

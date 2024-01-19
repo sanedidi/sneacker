@@ -1,12 +1,22 @@
 .trends {
+    margin: 100px 0;
     &__wrapper {}
 
     &__img {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         gap: 20px;
-        img{
-            max-width: 650px;
+        @media (max-width:992px) {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+        img {
+            max-width: clamp(18.75rem, 11.932rem + 34.09vw, 37.5rem);
+            @media (max-width:786px) {
+                width: 100%;
+                max-width: 100%;
+            }
+            
         }
     }
 
@@ -14,18 +24,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
+        gap: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem);
     }
 
     &__card {
         display: flex;
+        align-items: center;
         gap: 20px;
-        
+
     }
 
     &__card-img {
         width: 100%;
         max-width: 150px;
+
         img {
             height: 140px;
             object-fit: contain;
@@ -34,22 +46,48 @@
         }
     }
 
-    &__content {}
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__top{
+
+    }
 
     &__card-title {
+        color: #4c4d4f;
         font-size: 14px;
         font-family: sans-serif;
+        font-weight: 600;
     }
 
     &__text {
         font-family: sans-serif;
+        color: #4c4d4f;
+        font-size: 14px;
+        font-weight: 500;
     }
 
     &__price {
         font-family: sans-serif;
+        color: #4c4d4f;
+        font-size: 14px;
+        font-weight: 500;
     }
 
     &__btn {
         font-family: sans-serif;
+        color: #fff;
+        padding: 15px 25px;
+        background-color: black;
+        font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
+        font-weight: 500;
+
+        white-space: nowrap;
+        @media (max-width:992px) {
+            padding: 10px 20px;
+        }
     }
 }

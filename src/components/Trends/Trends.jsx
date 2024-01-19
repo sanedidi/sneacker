@@ -1,5 +1,5 @@
 import { trendsMap } from "./Trendsjs";
-import './Trends.scss'
+import "./Trends.scss";
 const Trends = () => {
   return (
     <section className="trends">
@@ -18,10 +18,16 @@ const Trends = () => {
                       <img src={card1.img} alt="" />
                     </div>
                     <div className="trends__content">
-                      <h2 className="trends__card-title">{card1.title}</h2>
-                      <p className="trends__text">{card1.desc}</p>
-                      <p className="trends__price">${card1.price}</p>
-                      <button className="trends__btn">{card1.btn}</button>
+                      <div className="trends__top">
+                        <h2 className="trends__card-title">{card1.title}</h2>
+                      </div>
+                      <div className="trends__mid">
+                        <p className="trends__text">{card1.desc}</p>
+                      </div>
+                        <p className="trends__price">${card1.price}</p>
+                      <div className="trends__btm">
+                        <button className="trends__btn">{card1.btn}</button>
+                      </div>
                     </div>
                   </div>
                 );
