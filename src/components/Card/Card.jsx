@@ -12,10 +12,12 @@ const Card = () => {
     return(
         <Link>
         <div className="card__card">
-            <img className='card__img' src={card.img} alt="" />
+            <div className="card__img">
+                <img  src={card.img} alt="" />
+            </div>
             <div className="card__content">
                 <p className="card__desc">{card.desc}</p>
-                <p className="card__price">{card.price}</p>
+                <p className="card__price">€{card.price}</p>
             </div>
         </div>
         </Link>
