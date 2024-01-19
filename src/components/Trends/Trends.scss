@@ -27,6 +27,8 @@
         width: 100%;
         max-width: 150px;
         img {
+            height: 140px;
+            object-fit: contain;
             background-color: #f6f6f6;
             width: 100%;
         }
