@@ -6,6 +6,8 @@ import Brands from '../components/Brands/Brands'
 import Card from '../components/Card/Card'
 import Shop from '../components/Shop/Shop'
 import Trends from '../components/Trends/Trends'
+import About from '../components/About/About'
+import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
     <>
@@ -16,6 +18,8 @@ const Home = () => {
         <Card  />
         <Shop />
         <Trends />
+        <About />
+        <Footer />
     </>
   )
 }

@@ -1,0 +1,28 @@
+.about{
+    margin: 100px 0 0;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title{
+        font-family: sans-serif;
+        color: #4c4d4f;
+        font-weight: 600;
+    }
+    &__text{
+        font-family: sans-serif;
+        color: #4c4d4f;
+    }
+    
+    &__img{
+        width: 100%;
+    }
+}
