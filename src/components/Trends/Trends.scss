@@ -12,7 +12,7 @@
         }
         img {
             max-width: clamp(18.75rem, 11.932rem + 34.09vw, 37.5rem);
-            @media (max-width:786px) {
+            @media (max-width:992px) {
                 width: 100%;
                 max-width: 100%;
             }
