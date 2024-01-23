@@ -4,15 +4,19 @@ import "./Header.scss";
 import { useState } from "react";
 const Header = () => {
   const [category, setCategory] = useState(0);
+  const [burger, setBurger] = useState(false);  
+  const toggleBurger = () => {
+    setBurger(!burger);
+  };
   return (
     <>
-      <header className="header">
+      <header className='header'>
         <div className="header__bg"></div>
         <div className="container">
           <div className="header__wrapper">
             <div className="header__top">
               <img className="header__logo" src={logo} alt="" />
-              <div className="header__burger">
+              <div  className={`header__burger ${burger ? "open" : ""}`} onClick={toggleBurger}>
                 <span></span>
               </div>
 
@@ -56,17 +60,18 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <nav className="header__nav">
+        <nav className={`header__nav ${burger ? "burger-open" : ""}`}>
           <div
             onMouseEnter={() => setCategory(1)}
             onMouseLeave={() => setCategory(0)}
             className="header__link"
           >
-            <Link to={"/"}>LATEST</Link>
+            <Link to={"/latest"}>LATEST</Link>
             <div className={`${category === 1 ? "active" : "test"}`}>
               <div className="header__categories-latest">
                 <div className="header__1">
-                  <div className="header__top-1">
+                  <div className="header__
+                  top-1">
                     <Link to={"/"}>SHOP BY CATEGORY</Link>
                   </div>
                   <Link to={"/"}>SNEAKERS</Link>
