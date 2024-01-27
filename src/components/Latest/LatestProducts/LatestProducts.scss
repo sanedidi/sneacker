@@ -3,16 +3,17 @@
 
     &__wrapper {
         display: grid;
-        grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 1fr 4fr;
+        @media (max-width:992px) {
+            grid-template-columns: none;
+        }
     }
 
-    &__btn-win {}
-
-    &__left {}
-
-    &__nav {}
-
-    &__right {}
+    &__left {
+        @media (max-width:992px) {
+            display: none;
+        }
+    }
 
     &__pag {
         margin: 10px 0;
@@ -22,12 +23,7 @@
         color: black;
     }
 
-    &__sort {}
-
-    &__sorts {}
-
-    &__text {}
-    &__items{
+    &__items {
         width: max-content;
         border: 1px solid #4c4d4f74;
         padding: 20px;
@@ -35,41 +31,48 @@
         flex-direction: column;
         gap: 20px;
     }
-    &__title {}
-    &__item{
+
+    &__item {
         display: flex;
         flex-direction: column;
+        width: 100%;
         gap: 20px;
-        width: max-content;
     }
-    &__box-item{
+
+    &__box-item {
         display: flex;
         align-items: center;
+        width: max-content;
         gap: 10px;
     }
-    &__box-text{
+
+    &__box-text {
         font-size: 14px;
         font-weight: 500;
         font-family: sans-serif;
         color: #4c4d4f;
     }
-    &__item-title{
+
+    &__item-title {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
         color: #4c4d4f;
         font-weight: 600;
         font-size: 18px;
         font-family: sans-serif;
         cursor: pointer;
-        width: max-content;
-        span{
-            &:active{
+        width: 100%;
+
+        span {
+            &:active {
                 color: #000;
             }
         }
     }
-    &__item-box{
+
+    &__item-box {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -77,4 +80,31 @@
         padding-bottom: 20px;
     }
 
+    &__right {}
+
+    &__nav {}
+
+    &__btn-win {}
+
+    &__title {}
+
+    &__text {}
+
+    &__sorts {}
+
+    &__sort {}
+
+
+    &__burger{
+        display: none;
+        @media (max-width:992px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            button{
+                width: 100%;
+            }
+        }
+    }
 }
