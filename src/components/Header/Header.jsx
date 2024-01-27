@@ -1,13 +1,43 @@
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../../assets/img/logo.webp";
 import "./Header.scss";
-import { useState } from "react";
+
 const Header = () => {
   const [category, setCategory] = useState(0);
-  const [burger, setBurger] = useState(false);  
+  const [burger, setBurger] = useState(false);
+
   const toggleBurger = () => {
     setBurger(!burger);
   };
+
+  const handleMouseEnter = () => {
+    if (window.innerWidth > 786) {
+      setCategory(1);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth > 786) {
+      setCategory(0);
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 786) {
+        setCategory(0);
+      }
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <header className='header'>
@@ -61,9 +91,9 @@ const Header = () => {
           </div>
         </div>
         <nav className={`header__nav ${burger ? "burger-open" : ""}`}>
-          <div
-            onMouseEnter={() => setCategory(1)}
-            onMouseLeave={() => setCategory(0)}
+        <div
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             className="header__link"
           >
             <Link to={"/latest"}>LATEST</Link>
@@ -97,8 +127,8 @@ const Header = () => {
             </div>
           </div>
           <div
-            onMouseEnter={() => setCategory(2)}
-            onMouseLeave={() => setCategory(0)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             className="header__link"
           >
             <Link to={"/"}>SNEACKERS</Link>
@@ -154,8 +184,8 @@ const Header = () => {
             </div>
           </div>
           <div
-            onMouseEnter={() => setCategory(3)}
-            onMouseLeave={() => setCategory(0)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             className="header__link"
           >
             <Link to={"/"}>MEN</Link>
@@ -211,8 +241,8 @@ const Header = () => {
             </div>
           </div>
           <div
-            onMouseEnter={() => setCategory(4)}
-            onMouseLeave={() => setCategory(0)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             className="header__link"
           >
             <Link to={"/"}>WOMEN</Link>
