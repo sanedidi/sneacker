@@ -1,21 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import "./LatestProductsRight.scss";
-import { productsCads } from "./LatestProductsCards";
 
 const LatesPoductRight = () => {
   const [isBtnWinOpen, setIsBtnWinOpen] = useState(false);
+  const [products, setProducts] = useState([]);
 
   const toggleBtnWin = () => {
     setIsBtnWinOpen(!isBtnWinOpen);
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:3001/products");
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Ошибка при получении данных:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="products__right">
       <h2 className="products__title">Latest</h2>
       <div className="products__nav">
         <div className="products__text">
-          <p>863 Items</p>
+          <p>{products.length} Items</p>
         </div>
         <div className="products__sorts">
           <p className="products__sort">Sorted by:</p>
@@ -34,24 +48,23 @@ const LatesPoductRight = () => {
           </div>
         </div>
       </div>
-       <div className="products__cards">
-        {productsCads.map((card) => {
+      <div className="products__cards">
+        {products.map((card) => {
           return (
-            <Link>
+            <Link key={card.index} to={`/product/${card.index}`}>
               <div className="products__card">
                 <div className="products__cards-img">
                   <img src={card.img} alt="" />
                 </div>
                 <div className="products__content">
                   <p className="products__desc">{card.desc}</p>
-                  <p className="products__price">{card.price}</p>
+                  <p className="products__price">${card.price}</p>
                 </div>
               </div>
             </Link>
           );
         })}
       </div>
-
     </div>
   );
 };

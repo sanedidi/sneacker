@@ -61,6 +61,7 @@
         margin: 10px 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem);
         @media (max-width:786px) {
             grid-template-columns: repeat(2, 1fr);
         }
