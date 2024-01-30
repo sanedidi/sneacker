@@ -1,39 +1,50 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./LatestProducts.scss";
+import LatesPoductRight from "./LatestProductsMainRight/LatesPoductRight";
 
 const LatestProducts = () => {
-  const [isBoxOpen, setIsBoxOpen] = useState(false);
+  const [isBoxOpen, setIsBoxOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen1, setIsOpen1] = useState(true);
+  const [isFilterActive, setIsFilterActive] = useState(false);
+  const [isSortActive, setIsSortActive] = useState(false);
 
   const toggleBox = () => {
     setIsBoxOpen(!isBoxOpen);
   };
 
-  const [isOpen, setIsOpen] = useState(false);
-
   const toggleBox2 = () => {
     setIsOpen(!isOpen);
   };
-
-  const [isOpen1, setIsOpen1] = useState(false);
 
   const toggleBox3 = () => {
     setIsOpen1(!isOpen1);
   };
 
+  const closeBox = () => {
+    setIsFilterActive(false)
+  };
 
-  const [isActive, SetActive] = useState(false);
+  const toggleFilter = () => {
+    setIsFilterActive(!isFilterActive);
+  };
 
-  const IsActiveBur = ()=>{
-    SetActive(!isActive)
-  }
+  const toggleSort = () => {
+    setIsSortActive(!isSortActive);
+  };
 
   return (
     <section className="products">
       <div className="container">
         <p className="products__pag">Home > Latest</p>
         <div className="products__wrapper">
-          <div className="products__left">
+          
+          <div
+            className={`products__left ${
+              isFilterActive || isSortActive ? "productActive" : ""
+            }`}
+          >
             <div className="products__items">
               <div className="products__item">
                 <div className="products__item__top" onClick={toggleBox}>
@@ -159,33 +170,31 @@ const LatestProducts = () => {
                     </div>
                   </div>
                 )}
-              </div>
-            </div>
-          </div>
-          <div className="products__burger">
-            <button>Filter</button>
-            <button className="products__burger-btn">Sort</button>
-          </div>
-          <div className="products__right">
-            <h2 className="products__title">Latest</h2>
-            <div className="products__nav">
-              <div className="products__text">
-                <p>863 Items</p>
-              </div>
-              <div className="products__sorts">
-                <p className="products__sort">Sorted by:</p>
-                <button>Recommended</button>
-                <div className="products__btn-win">
-                  <Link to={"/"}>Recommended</Link>
-                  <Link to={"/"}>Product name</Link>
-                  <Link to={"/"}> Price</Link>
-                  <Link to={"/"}>Best discount </Link>
-                  <Link to={"/"}>Most sold </Link>
-                  <Link to={"/"}>Latest collections </Link>
+                <div className="products__items-close">
+                  <button onClick={closeBox}>Close the window</button>
                 </div>
               </div>
             </div>
           </div>
+          <div className="products__burger">
+            <button
+              className={`products__burger-btn1 ${
+                isFilterActive ? "burger-active" : ""
+              }`}
+              onClick={toggleFilter}
+            >
+              Filter
+            </button>
+            <button
+              className={`products__burger-btn2 ${
+                isSortActive ? "burger-active2" : ""
+              }`}
+              onClick={toggleSort}
+            >
+              Sort
+            </button>
+          </div>
+<LatesPoductRight />
         </div>
       </div>
     </section>
