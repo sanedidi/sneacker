@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./LatestProducts.scss";
 import LatesPoductRight from "./LatestProductsMainRight/LatesPoductRight";
-
+import Footer from './../../Footer/Footer'
 const LatestProducts = () => {
   const [isBoxOpen, setIsBoxOpen] = useState(true);
   const [isOpen, setIsOpen] = useState(true);
@@ -23,7 +22,7 @@ const LatestProducts = () => {
   };
 
   const closeBox = () => {
-    setIsFilterActive(false)
+    setIsFilterActive(false);
   };
 
   const toggleFilter = () => {
@@ -37,9 +36,8 @@ const LatestProducts = () => {
   return (
     <section className="products">
       <div className="container">
-        <p className="products__pag">Home > Latest</p>
+        <p className="products__pag">Home &gt; Latest</p>
         <div className="products__wrapper">
-          
           <div
             className={`products__left ${
               isFilterActive || isSortActive ? "productActive" : ""
@@ -49,7 +47,7 @@ const LatestProducts = () => {
               <div className="products__item">
                 <div className="products__item__top" onClick={toggleBox}>
                   <h2 className="products__item-title">
-                    Product Type <span> > </span>
+                    Product Type <span>&gt; </span>
                   </h2>
                 </div>
                 {isBoxOpen && (
@@ -96,7 +94,7 @@ const LatestProducts = () => {
               <div className="products__item">
                 <div className="products__item__top" onClick={toggleBox2}>
                   <h2 className="products__item-title">
-                    Suitable for <span> > </span>
+                    Suitable for <span> &gt; </span>
                   </h2>
                 </div>
                 {isOpen && (
@@ -127,7 +125,7 @@ const LatestProducts = () => {
               <div className="products__item">
                 <div className="products__item__top" onClick={toggleBox3}>
                   <h2 className="products__item-title">
-                    Material <span> > </span>
+                    Material <span> &gt; </span>
                   </h2>
                 </div>
                 {isOpen1 && (
@@ -194,8 +192,9 @@ const LatestProducts = () => {
               Sort
             </button>
           </div>
-<LatesPoductRight />
+          <LatesPoductRight />
         </div>
+      <Footer />
       </div>
     </section>
   );

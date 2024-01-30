@@ -1,0 +1,453 @@
+{
+  "productsDatabase": [
+    {
+      "id": "1",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker1.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "2",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker2.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "3",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker3.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "4",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker4.webp",
+      "desc": "Product 50 Description",
+      "price": 200
+    },
+    {
+      "id": "5",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker5.webp",
+      "desc": "Product 50 Description",
+      "price": 200
+    },
+    {
+      "id": "6",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker6.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "7",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker7.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "8",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker8.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "9",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker9.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "10",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker10.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "11",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker11.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "12",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker12.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "13",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker13.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "14",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker14.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "15",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker15.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "16",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker16.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "17",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker17.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "18",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker18.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "19",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker19.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "20",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker20.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "21",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker21.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "22",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker22.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "23",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker23.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "24",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker24.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "24",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker25.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "25",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker25.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "26",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker26.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "27",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker27.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "28",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker28.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "29",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker29.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "30",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker30.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "31",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker31.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "32",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker32.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "33",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker33.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "34",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker34.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "35",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker35.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "36",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker36.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "37",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker37.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "38",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker38.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "39",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker39.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "40",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker40.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "41",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker41.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "42",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker42.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "43",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker43.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "44",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker44.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "45",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker45.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "46",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker46.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "47",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker47.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "48",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker48.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "49",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker49.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "50",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker50.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "51",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker51.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "52",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker52.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "53",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker53.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "54",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker54.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "55",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker55.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "56",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker56.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "57",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker57.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "58",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker58.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "59",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker59.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "60",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker60.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "61",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker61.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    }
+    ,
+    {
+      "id": "62",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker1.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    },
+    {
+      "id": "63",
+      "category": "sneakers",
+      "img": "/BackImg/sneacker2.webp",
+      "desc": "Karhu Fusion 2.0 Bright White / Foggy Dew",
+      "price": 150
+    }
+  ]
+}
