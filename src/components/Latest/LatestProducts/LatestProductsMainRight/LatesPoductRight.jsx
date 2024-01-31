@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./LatestProductsRight.scss";
-// import SecondPage from "./SecondPage/SecondPage"; 
+// import SecondPage from "./SecondPage/SecondPage";
 
 const LatesPoductRight = () => {
   const [isBtnWinOpen, setIsBtnWinOpen] = useState(false);
@@ -17,7 +17,9 @@ const LatesPoductRight = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3009/productsDatabase");
+        const response = await axios.get(
+          "http://localhost:3009/productsDatabase"
+        );
         setProducts(response.data);
       } catch (error) {
         console.error("Ошибка при получении данных:", error);
@@ -30,7 +32,10 @@ const LatesPoductRight = () => {
   // Логика для отображения товаров на текущей странице
   const indexOfLastProduct = currentPage * pageSize;
   const indexOfFirstProduct = indexOfLastProduct - pageSize;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
 
   // Логика для переключения между страницами
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -93,14 +98,52 @@ const LatesPoductRight = () => {
           );
         })}
       </div>
-      <div className="pagination">
-        {Array.from({ length: Math.ceil(products.length / pageSize) }, (_, index) => (
-          <button key={index + 1} onClick={() => paginate(index + 1)}>
-            {index + 1}
-          </button>
-        ))}
+      <div
+        class="pagination-container wow zoomIn mar-b-1x"
+        data-wow-duration="0.5s"
+      >
+        <ul class="pagination">
+          <li class="pagination-item--wide first">
+            <a
+              class="pagination-link--wide first"
+              href="#"
+              onClick={() => paginate(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              Previous
+            </a>
+          </li>
+          {Array.from(
+            { length: Math.ceil(products.length / pageSize) },
+            (_, index) => (
+              <li
+                key={index + 1}
+                class={`pagination-item ${
+                  index + 1 === currentPage ? "is-active" : ""
+                }`}
+              >
+                <a
+                  class="pagination-link"
+                  href="#"
+                  onClick={() => paginate(index + 1)}
+                >
+                  {index + 1}
+                </a>
+              </li>
+            )
+          )}
+          <li class="pagination-item--wide last">
+            <a
+              class="pagination-link--wide last"
+              href="#"
+              onClick={() => paginate(currentPage + 1)}
+              disabled={currentPage === Math.ceil(products.length / pageSize)}
+            >
+              Next
+            </a>
+          </li>
+        </ul>
       </div>
-      {/* {currentPage === 2 && <SecondPage products={currentProducts} />} */}
     </div>
   );
 };
