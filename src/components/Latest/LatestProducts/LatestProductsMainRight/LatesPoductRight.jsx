@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./LatestProductsRight.scss";
-import SecondPage from "./SecondPage/SecondPage"; 
+// import SecondPage from "./SecondPage/SecondPage"; 
 
 const LatesPoductRight = () => {
   const [isBtnWinOpen, setIsBtnWinOpen] = useState(false);
@@ -100,7 +100,7 @@ const LatesPoductRight = () => {
           </button>
         ))}
       </div>
-      {currentPage === 2 && <SecondPage products={currentProducts} />}
+      {/* {currentPage === 2 && <SecondPage products={currentProducts} />} */}
     </div>
   );
 };
