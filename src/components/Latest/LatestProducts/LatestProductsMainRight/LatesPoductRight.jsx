@@ -983,7 +983,7 @@ const LatesPoductRight = () => {
       </div>
       <div className="products__cards">
         {currentProducts.map((card) => (
-          <Link key={card.id} to={`/product/${card.id}`}>
+          <Link key={card.id} to={`/single-product/${card.id}`}>
             <div className="products__card">
               <div className="products__cards-img">
                 <img src={card.img} alt="" />

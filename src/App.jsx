@@ -4,6 +4,7 @@ import Error from "./pages/Error";
 import Latest from "./pages/Latest";
 
 import './App.scss'
+import SingleProduct from "./pages/SingleProduct";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="*" element={<Error/>} />\
-      <Route path="/latest" element={<Latest />} />\
+      <Route path="/latest" element={<Latest />} />
+      <Route path="/single-product/:id" element={<SingleProduct />} />
     </Routes>
     </>
   );
